@@ -3,43 +3,47 @@
     src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
-:root{
+:root {
     --roxo-gamifica: #47208b;
     --laranja-gamifica: #f06738;
 }
 
 /* Reset CSS*/
-* { 
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.container-grid{
+.container-grid {
     width: 80vw;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.banner{ 
+.banner {
     height: 100vh;
 
-    background-image: linear-gradient(90deg, rgba(53, 24, 104, 1) 0%, rgba(53 , 24, 104, 0.8) 100%), url(img/bg-room\ 1.png);
-    background-repeat: no-repeat; 
+    background-image: linear-gradient(90deg, rgba(53, 24, 104, 1) 0%, rgba(53, 24, 104, 0.8) 100%), url(img/bg-room\ 1.png);
+    background-repeat: no-repeat;
 
     background-position: 165% 40%;
 }
 
 
-header{
+header {
     height: 165px;
 }
 
-header img { 
+header button{
+    display: none;
+}
+
+header img {
     width: 234px;
 }
 
@@ -55,14 +59,14 @@ header .container-grid {
 }
 
 
-.menu{
+.menu {
     width: 700px;
-    
+
     display: flex;
     justify-content: space-between;
 }
 
-.menu a{
+.menu a {
     font-size: 18px;
     font-family: 'Anta';
     color: white;
@@ -73,7 +77,7 @@ header .container-grid {
     transition: text-descoration 500ms ease;
 }
 
-.menu a:hover{
+.menu a:hover {
     text-decoration-color: white;
 }
 
@@ -82,11 +86,11 @@ header .container-grid {
 
     display: flex;
     align-items: center;
-    
-    
+
+
 
 }
-    
+
 
 .conteudo-banner p {
     color: white;
@@ -94,11 +98,11 @@ header .container-grid {
     font-family: 'Anta';
     font-size: 32px;
 
-    
-    
+
+
 }
 
-.conteudo-banner span{
+.conteudo-banner span {
     display: block;
 
     overflow: hidden;
@@ -106,13 +110,12 @@ header .container-grid {
     border-right: 7px solid var(--laranja-gamifica);
     white-space: nowrap;
 
-    animation: 
+    animation:
         digitando 2s steps(40, end),
-        cursor 0.75s step-end infinite
-    ;
+        cursor 0.75s step-end infinite;
 }
 
-@keyframes digitando{
+@keyframes digitando {
     from {
         width: 0;
     }
@@ -122,13 +125,14 @@ header .container-grid {
     }
 }
 
-@keyframes cursor{
+@keyframes cursor {
+
     from,
-    to{
+    to {
         border-color: transparent;
     }
 
-    50%{
+    50% {
         border-color: var(--laranja-gamifica);
     }
 }
@@ -142,7 +146,7 @@ header .container-grid {
     flex-direction: column;
     justify-content: space-between;
 
-    text-align: center; 
+    text-align: center;
 }
 
 h2 {
@@ -153,15 +157,15 @@ h2 {
 
 #sobre p {
     font-size: 17px;
-    
+
     text-align: left;
     font-family: 'Montserrat';
 
     line-height: 1.5;
-    
+
 }
 
-#cases{
+#cases {
     text-align: center;
 
     padding-bottom: 100px;
@@ -173,22 +177,22 @@ h2 {
     margin-bottom: 70px;
 }
 
-.container-cards{
+.container-cards {
     display: flex;
-    justify-content:space-between;
-    
+    justify-content: space-between;
+
 }
 
-.card{
+.card {
     height: 400px;
     width: 250px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
-    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 
     padding-bottom: 20px;
     margin-bottom: 40px;
@@ -196,7 +200,7 @@ h2 {
     background-color: var(--roxo-gamifica);
     border-radius: 4px;
 
-    
+
 }
 
 .card img {
@@ -206,7 +210,7 @@ h2 {
     border-radius: 4px 4px 0px 0px;
 }
 
-.card p{
+.card p {
     color: white;
 
     font-family: "Montserrat";
@@ -220,7 +224,7 @@ h2 {
 
 .card button {
     background-color: var(--laranja-gamifica);
-    
+
     border-radius: 4px;
     border: none;
 
@@ -232,17 +236,17 @@ h2 {
     font-family: "Montserrat";
     font-size: 17px;
     font-weight: 600;
-    
+
     cursor: pointer;
 
 }
 
-.card button:hover{
+.card button:hover {
     background-color: #ad4929;
 
 }
 
-#portfolio{
+#portfolio {
     height: 250px;
 
     background-image: url(img/depositphotos_82602244-stock-illustration-isometric-pixel-art-characters\ 1.png);
@@ -256,18 +260,18 @@ h2 {
 
 }
 
-.filtro{
+.filtro {
     width: 100%;
     height: 100%;
 
     background-color: #47208bc2;
 
     position: absolute;
-    
+
     margin-bottom: 120px;
 }
 
-#portfolio .container-grid{
+#portfolio .container-grid {
     height: 100%;
 
     display: flex;
@@ -288,7 +292,7 @@ h2 {
     transition: 200ms;
 }
 
-#portfolio a:hover{
+#portfolio a:hover {
     transform: scale(1.05);
     transition: 200ms;
 }
@@ -301,11 +305,11 @@ h2 {
 }
 
 
-#contato h2{
+#contato h2 {
     margin-bottom: 70px;
 }
 
-#contato form{
+#contato form {
     width: 50%;
 
     margin: 0 auto;
@@ -323,7 +327,7 @@ h2 {
     font-size: 17px;
 }
 
-.campo{
+.campo {
     width: 60%;
 
     text-align: left;
@@ -347,7 +351,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-.campo input{
+.campo input {
     height: 40px;
 
     color: white;
@@ -362,7 +366,7 @@ h2 {
 
 }
 
-.campo-descricao textarea{
+.campo-descricao textarea {
     color: white;
     background-color: #351868;
 
@@ -376,25 +380,29 @@ h2 {
     resize: none;
 }
 
-.campo label, .campo-descricao label{
+.campo label,
+.campo-descricao label {
     margin-bottom: 15px;
 
 }
 
-.campo input, .campo-descricao textarea{
+.campo input,
+.campo-descricao textarea {
     font-family: "Montserrat";
     font-size: 17px;
 }
 
-.campo input::placeholder, .campo-descricao textarea::placeholder{
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
     color: #a0a0a0;
 }
 
-.campo input:focus, .campo-descricao textarea:focus{
+.campo input:focus,
+.campo-descricao textarea:focus {
     outline: 2px solid var(--laranja-gamifica);
 }
 
-#contato form button{
+#contato form button {
     height: 40px;
     width: 60%;
 
@@ -406,7 +414,8 @@ h2 {
 
     font-size: 17px;
     font-family: "Montserrat";
-    font-weight: 700; /* Bold */
+    font-weight: 700;
+    /* Bold */
 
     text-transform: uppercase;
 
@@ -415,17 +424,17 @@ h2 {
     transition: backgroundcolor 500ms;
 }
 
-#contato form button:hover{
+#contato form button:hover {
     background-color: #ad4929;
 }
 
-footer{
+footer {
     background-color: var(--roxo-gamifica);
 
     height: 290px;
 }
 
-footer .container-grid{
+footer .container-grid {
     height: 100%;
 
     display: flex;
@@ -442,7 +451,7 @@ footer .container-grid{
     align-items: flex-end;
 }
 
-footer .redes-sociais p{
+footer .redes-sociais p {
     color: white;
 
     font-size: 24px;
@@ -450,19 +459,68 @@ footer .redes-sociais p{
 
 }
 
-footer .icones-redes{
+footer .icones-redes {
     width: 240px;
 
-   display: flex;
-   justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
-.icones-redes a{
+.icones-redes a {
     color: white;
 }
 
-.icones-redes a:hover{
+.icones-redes a:hover {
     color: var(--laranja-gamifica);
 }
 
-/* Scrol nos links*/
+
+@media screen and (max-width: 1300px) {
+    header {
+        position: relative;
+    }
+
+    header button{
+        border: none;
+        background-color: none;
+
+        width: 50px;
+
+    } 
+
+    header svg {
+        fill: white;
+    }
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        background-color: #000000b5;
+
+        position: absolute;
+        top: 165px;
+        right: 0px;
+    }
+    #sobre {
+        padding: 100px 15%;
+    }
+
+    .card{
+        height: 320px;
+        width: 200px;
+    }
+
+    #contato form {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    
+}
